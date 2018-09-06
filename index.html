@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <style>
+        html {
+            font-size: 100px;
+        }
+
+        html, body {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        #timebox {
+            width: 2rem;
+            height: 1rem;
+            line-height: 1rem;
+            font-size: .3rem;
+            margin:1rem auto;
+            background: green;
+            color:#fff;
+            text-align: center;
+            border-radius:.4rem;
+            letter-spacing: .02rem;
+        }
+    </style>
+    <script>
+        document.documentElement.style.fontSize = document.documentElement.clientWidth / 640 * 100 + 'px';
+    </script>
+</head>
+<body>
+<div id="timebox">00:00:00</div>
+<script src="js/index.js"></script>
+</body>
+</html>
